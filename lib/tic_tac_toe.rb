@@ -9,9 +9,9 @@ WIN_COMBINATIONS =
 def play(board)
   current_turn = 1
   while current_turn <= 9
+    if over?(board); break; end;
     turn(board)
     current_turn += 1
-    if over?(board); current_turn = 10; end;
   end
   if won?(board)
     puts "Congratualtions, player #{winner(board)}"
