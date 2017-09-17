@@ -11,7 +11,7 @@ def play(board)
   while current_turn <= 9
     turn(board)
     current_turn += 1
-    if over?(board); current_turn = 9; end;
+    if over?(board); current_turn = 10; end;
   end
   if won?(board)
     puts "Congratualtions, player #{winner(board)}"
