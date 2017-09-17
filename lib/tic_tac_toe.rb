@@ -14,7 +14,7 @@ def play(board)
     current_turn += 1
   end
   if won?(board)
-    puts "Congratualtions #{winner(board)!}"
+    puts "Congratulations #{winner(board)!}"
   else
     puts "Cat's game!"
   end
