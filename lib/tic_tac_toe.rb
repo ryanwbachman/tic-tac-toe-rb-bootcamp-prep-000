@@ -107,4 +107,3 @@ def winner(board)
   end
   nil
 end
-
